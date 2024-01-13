@@ -1,0 +1,93 @@
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #92d1f5;
+  margin: 0;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#weather-container{
+  background: rgba(255,255,255,0.3);
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.486);
+  text-align: center;
+}
+
+h1,p {
+  color: #fff;
+  margin: 8px 0;
+  font-weight: bold;
+}
+
+.cityInput{
+  width: calc(100% - 16px);
+  padding:10px;
+  font-weight: bold;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid white;
+  margin:20px;
+}
+
+button[type="submit"] {
+  background: #3bb2e9;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 20px;
+  width: 100px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover {
+  background: #3a7ee4;
+}
+
+.card{
+  background: linear-gradient(180deg, hsl(210,100%,75%),hsl(40, 42%, 56%));
+  padding:50px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  min-width: 300px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+
+.cityDisplay, .tempDisplay{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.humidityDisplay{
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.descDisplay{
+  font-style: italic;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.weatherEmoji{
+  margin: 0;
+  font-size: 40px;
+}
+
+.errorDisplay{
+  font-size: 20px;
+  font-weight: bold;
+}
